@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Robotic Society</title>
+    <link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+    <div class="background-container">
+        <nav class="headernav">
+            <div class="heading">
+                <h4>The Robotic Society</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="admin.html">Admin Login</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="main-section">
+            <h1>Welcome to The Robotic Society</h1>
+            <p>Explore our events, innovations, and community.</p>
+        </section>
+    </div>
+
+    <section id="events" class="events-section">
+        <h2 class="events-heading">Events</h2>
+        <div class="events-container">
+            <div class="events-buttons">
+                <button id="currentBtn" class="event-btn">Current Events</button>
+                <button id="pastBtn" class="event-btn">Past Events</button>
+            </div>
+            <div id="eventsContent" class="events-content">
+                <!-- Events will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <div id="modalInfo"></div>
+        </div>
+    </div>
+
+    <section id="about" class="about-us-section">
+        <div class="about-us-container">
+            <div class="about-us-video">
+                <video controls>
+                    <source src="path-to-your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="about-us-info">
+                <h3>About Us</h3>
+                <p>The Robotic Society is dedicated to exploring new frontiers in robotics. Our mission is to advance technological innovation and promote the study of robotics. We foster a community where students and enthusiasts can work together to create, experiment, and push the boundaries of what's possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>© 2024 The Robotic Society. All rights reserved.</p>
+                <p>Email: <a href="mailto:info@roboticsociety.org">info@roboticsociety.org</a></p>
+                <p>Contact: +1 234 567 8900</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/robotic-society" class="social-link" target="_blank">
+                    <img src="path-to-linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/roboticsociety" class="social-link" target="_blank">
+                    <img src="path-to-instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
